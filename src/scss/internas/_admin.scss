@@ -1,0 +1,116 @@
+.alerta{
+
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: $blanco;
+    margin: 3rem 0;
+
+
+    &.alerta{
+        background-color: $rojo;
+        border: 1rem solid $rojoOscuro;
+        
+    }
+
+    &.correcto{
+        background-color: $verde;
+        border: 1rem solid $verdeOscuro;
+    }
+
+
+}
+
+
+
+table.propiedades{
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    display: block;
+    overflow: auto;
+    min-height: 50vh;
+
+
+
+    thead{
+        background-color: $verde ;
+
+        th{
+            color: $blanco;
+            padding: 2rem 10rem;
+        }
+
+    }
+
+
+
+    .imagen-tabla{
+        width: 10rem;
+        margin: 0 auto;
+    }
+
+    tbody{
+        td{
+            margin-right: 50rem;
+        }
+
+    }
+
+        
+
+    td{
+        text-align: center;  
+    }
+      
+}
+
+@include tablet { 
+
+    table.propiedades{
+        margin-top: 4rem;
+        width: 100%;
+        border-spacing: 0;
+        display: table;
+        overflow: auto;
+    
+    
+    
+        thead{
+            background-color: $verde ;
+    
+            th{
+                color: $blanco;
+                padding: 2rem;
+            }
+    
+        }
+    
+    
+    
+        .imagen-tabla{
+            width: 10rem;
+            margin: 0 auto;
+        }
+    
+        tbody{
+            td{
+                margin-right: 50rem;
+            }
+    
+        }
+    
+            
+    
+        td{
+            text-align: center;  
+        }
+          
+    }
+
+}
+
+.imagen-small{
+    width: 20rem;
+    margin-top: 2rem;
+}

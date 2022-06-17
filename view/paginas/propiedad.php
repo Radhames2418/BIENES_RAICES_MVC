@@ -1,0 +1,36 @@
+<main class=" seccion">
+    <h1><?php echo $propiedad->titulo ?> </h1>
+
+    <picture>
+        <img src="/imagenes/<?php echo $propiedad->imagen ?>" alt="texto de destacada" loading="lazy">
+    </picture>
+
+    <div class="resumen-propiedad contenedor contenido-centrado">
+        <p class="precio"><?php echo $propiedad->precio ?></p>
+
+        <ul class="iconos-caracteristica">
+            <li>
+                <img loading="lazy" src="/build/img/icono_wc.svg" alt="icono">
+                <p><?php echo $propiedad->wc ?></p>
+            </li>
+
+            <li>
+                <img loading="lazy" src="/build/img/icono_estacionamiento.svg" alt="icono">
+                <p><?php echo $propiedad->estacionamiento ?></p>
+            </li>
+
+            <li>
+                <img loading="lazy" src="/build/img/icono_dormitorio.svg" alt="icono">
+                <p><?php echo $propiedad->habitaciones ?></p>
+            </li>
+        </ul>
+
+
+        <p>
+            <?php echo $propiedad->descripcion ?>
+        </p>
+
+
+    </div>
+
+</main>

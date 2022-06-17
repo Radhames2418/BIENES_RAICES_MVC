@@ -1,0 +1,24 @@
+.boton-amarillo{
+    text-transform: uppercase;
+    @include boton($amarillo,block);    
+}
+
+.boton-amarillo-inlineblog{
+    text-transform: uppercase;
+    @include boton($amarillo,inline-block);    
+}
+
+
+.boton-verde{
+    @include boton($verde,inline);    
+}
+
+.boton-rojo-block{
+    @include boton($rojo,block); 
+    text-transform: uppercase; 
+    padding: 1.5rem 0;
+}
+
+.boton-verde-block{
+    @include boton($verde,block);    
+}
